@@ -16,8 +16,7 @@ public class Main {
                     System.out.println( InputCommandEntryRemove(input)+ " entered (ANOMALY)");
                 }
                 System.out.println("MabyInputCommandEntry(input) = true");
-            }
-            if (MabyInputCommandExit(input)) {
+            }else if (MabyInputCommandExit(input)) {
                 if (list.contains(InputCommandExitRemove(input))) {
                     list.remove(list.indexOf(InputCommandExitRemove(input)));
                     System.out.println(InputCommandExitRemove(input) + " exited");
@@ -25,7 +24,7 @@ public class Main {
                     System.out.println(InputCommandExitRemove(input) + " exited (ANOMALY)");
                 }
                 System.out.println("MabyInputCommandExit(input)");
-            }
+            }else System.out.println("Error not exit or entry!");
 
         }
     }
